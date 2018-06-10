@@ -15,7 +15,7 @@ sudo -u $CURRENT_USER git reset --hard origin/master
 
 echo "Installating custom applications"
 # Albert, Filezilla, vlc, audacity, Inkscape
-apt install albert vlc browser-plugin-vlc filezilla audacity inkscape -y
+apt-get install albert vlc browser-plugin-vlc filezilla audacity inkscape -y
 
 # Google chrome, docker, Sublime text
 sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
