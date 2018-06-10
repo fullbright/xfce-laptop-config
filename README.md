@@ -5,4 +5,4 @@ The repository holds the configuration for my xfce laptop to ease reinstallation
 
 Run this command :
 
-	curl -s https://raw.githubusercontent.com/fullbright/xfce-laptop-config/master/install_tools.sh | sudo sh /dev/stdin $(whoami)
+	curl -s https://raw.githubusercontent.com/fullbright/xfce-laptop-config/master/install_tools.sh | sudo -u $USER bash
