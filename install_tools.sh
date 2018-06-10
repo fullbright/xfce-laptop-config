@@ -6,7 +6,12 @@ echo "Installing base components"
 curl -s https://raw.githubusercontent.com/fullbright/historycrawler/master/install_base_tools.sh | sudo sh /dev/stdin $CURRENT_USER
 
 echo "Pulling configuration from git repo"
-git clone https://github.com/fullbright/xfce-laptop-config.git  ~/
+cd ~
+sudo -u $CURRENT_USER git init
+sudo -u $CURRENT_USER git remote add origin https://github.com/fullbright/xfce-laptop-config.git
+sudo -u $CURRENT_USER git fetch --all
+sudo -u $CURRENT_USER git reset --hard origin/master
+#sudo -u $CURRENT_USER git clone https://github.com/fullbright/xfce-laptop-config.git  ~/ --depth 1
 
 echo "Installating custom applications"
 # Albert, Filezilla, vlc, audacity, Inkscape
