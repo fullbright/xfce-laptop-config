@@ -9,8 +9,8 @@ echo "Pulling configuration from git repo"
 git clone https://github.com/fullbright/xfce-laptop-config.git  ~/
 
 echo "Installating custom applications"
-# Filezilla, vlc, audacity, Inkscape
-apt install vlc browser-plugin-vlc filezilla audacity inkscape -y
+# Albert, Filezilla, vlc, audacity, Inkscape
+apt install albert vlc browser-plugin-vlc filezilla audacity inkscape -y
 
 # Google chrome, docker, Sublime text
 sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
