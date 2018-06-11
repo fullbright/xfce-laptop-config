@@ -57,8 +57,9 @@ rm Release.key
 
 # Albert
 echo "=== Installing albert"
-wget -nv -O Albert_Release.key https://build.opensuse.org/projects/home:manuelschneid3r/public_key 
-sudo apt-key add - < Albert_Release.key
+#wget -nv -O Albert_Release.key https://build.opensuse.org/projects/home:manuelschneid3r/public_key 
+#sudo apt-key add - < Albert_Release.key
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_18.04/ /' > /etc/apt/sources.list.d/home:manuelschneid3r.list"
 sudo apt-get update
 sudo apt-get install albert -y
 
