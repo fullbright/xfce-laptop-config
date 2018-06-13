@@ -44,6 +44,18 @@ sudo systemctl enable docker
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
+# Install Grive2 for Google Drive sync
+sudo apt-get install git cmake build-essential libgcrypt11-dev libyajl-dev \
+    libboost-all-dev libcurl4-openssl-dev libexpat1-dev libcppunit-dev binutils-dev \
+    debhelper zlib1g-dev dpkg-dev pkg-config -y
+sudo -u $CURRENT_USER git clone https://github.com/vitalif/grive2
+cd grive2
+mkdir build
+cd build
+sudo -u $CURRENT_USER cmake ..
+sudo -u $CURRENT_USER make -j4
+sudo make install
+
 # Sublime text
 echo "=== Installing Sublime text"
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
