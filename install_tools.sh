@@ -81,3 +81,6 @@ sudo apt-get update
 sudo apt-get install albert -y
 
 echo "Installation finished"
+
+echo "Download the docker projects "
+sudo -u $CURRENT_USER git clone https://$BITBUCKET_USER:$BITBUCKET_PWD@bitbucket.org/fullbright/docker-projects.git
