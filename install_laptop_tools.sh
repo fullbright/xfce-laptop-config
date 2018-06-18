@@ -10,8 +10,9 @@ curl -s https://raw.githubusercontent.com/fullbright/historycrawler/master/insta
 echo "=== Installing dev components"
 curl -s https://raw.githubusercontent.com/fullbright/xfce-laptop-config/master/install_dev_tools.sh | sudo sh /dev/stdin $CURRENT_USER
 
-echo "=== Installing baobab for disk analysis"
-sudo apt-get install baobab -y
+echo "=== Installing baobab for disk analysis and conky"
+sudo apt-get install baobab conky conky-all -y
+sudo -u $CURRENT_USER git clone https://github.com/fullbright/conky.git ~/.conky
 
 echo "=== Pulling configuration from git repo"
 cd ~
