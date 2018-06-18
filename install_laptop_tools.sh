@@ -10,6 +10,9 @@ curl -s https://raw.githubusercontent.com/fullbright/historycrawler/master/insta
 echo "=== Installing dev components"
 curl -s https://raw.githubusercontent.com/fullbright/xfce-laptop-config/master/install_dev_tools.sh | sudo sh /dev/stdin $CURRENT_USER
 
+echo "=== Installing baobab for disk analysis"
+sudo apt-get install baobab -y
+
 echo "=== Pulling configuration from git repo"
 cd ~
 sudo -u $CURRENT_USER git init
