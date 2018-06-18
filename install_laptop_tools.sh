@@ -50,6 +50,12 @@ sudo apt-get update
 sudo apt-get install arc-theme -y
 rm Release.key
 
+# Recent notifications
+echo "=== Installing recent notifications"
+sudo add-apt-repository ppa:jconti/recent-notifications
+sudo apt-get update
+sudo apt install indicator-notifications -y
+
 # Albert
 echo "=== Installing albert"
 #wget -nv -O Albert_Release.key https://build.opensuse.org/projects/home:manuelschneid3r/public_key
