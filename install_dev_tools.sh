@@ -7,6 +7,10 @@ echo "Current user is $CURRENT_USER"
 #echo "=== Installing base components"
 #curl -s https://raw.githubusercontent.com/fullbright/historycrawler/master/install_base_tools.sh | sudo sh /dev/stdin $CURRENT_USER
 
+# Dev tools
+echo "=== Installing dev tools"
+sudo apt-get install -y python-virtualenv
+
 # Docker
 echo "=== Installing docker"
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
