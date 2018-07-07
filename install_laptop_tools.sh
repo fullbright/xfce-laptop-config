@@ -23,8 +23,13 @@ sudo -u $CURRENT_USER git reset --hard origin/master
 #sudo -u $CURRENT_USER git clone https://github.com/fullbright/xfce-laptop-config.git  ~/ --depth 1
 
 echo "=== Installating custom applications: Filezilla, vlc, audacity, Inkscape"
-# Undistractme, diodon, redshift, Filezilla, vlc, audacity, Inkscape
-sudo apt-get install undistract-me redshift redshift-gtk plasma-applet-redshift-control diodon vlc browser-plugin-vlc filezilla audacity inkscape -y
+# Undistractme, redshift, Filezilla, vlc, audacity, Inkscape
+sudo apt-get install undistract-me redshift redshift-gtk plasma-applet-redshift-control vlc browser-plugin-vlc filezilla audacity inkscape -y
+
+echo "=== Installing diodon"
+sudo add-apt-repository ppa:diodon-team/stable -y
+sudo apt-get update
+sudo apt-get install -y diodon
 
 # Google chrome
 echo "=== Installing Google Chrome"
