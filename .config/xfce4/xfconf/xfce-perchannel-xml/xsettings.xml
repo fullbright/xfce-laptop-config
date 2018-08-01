@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Gn-OSX-XFCE-Edition-1.2"/>
-    <property name="IconThemeName" type="string" value="la-capitaine-icon-theme"/>
+    <property name="ThemeName" type="string" value="OS-X-Mavericks-master"/>
+    <property name="IconThemeName" type="string" value="la-capitaine-icon-theme-0.5.0"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>

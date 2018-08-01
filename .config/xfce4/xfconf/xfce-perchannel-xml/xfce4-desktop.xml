@@ -21,14 +21,25 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/xubuntu-wallpaper.png"/>
+          <property name="last-image" type="string" value="/home/sergio/Documents/bible_wallpapers/published/DgS6Ui9XUAE4pjc.png"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
       </property>
       <property name="monitor1" type="empty">
         <property name="image-path" type="empty"/>
         <property name="image-style" type="empty"/>
         <property name="image-show" type="empty"/>
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/xubuntu-wallpaper.png"/>
+        </property>
       </property>
     </property>
+  </property>
+  <property name="last" type="empty">
+    <property name="window-width" type="int" value="576"/>
+    <property name="window-height" type="int" value="536"/>
   </property>
 </channel>
