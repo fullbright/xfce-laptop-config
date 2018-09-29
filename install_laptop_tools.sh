@@ -73,5 +73,10 @@ sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/manuelschn
 sudo apt-get update
 sudo apt-get install albert -y
 
+# Configure git credentials typing
+echo "=== Configuring git"
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+
 echo "Installation finished"
 
